@@ -114,8 +114,10 @@ int WinMain (HINSTANCE hInst,HINSTANCE hPrevInst,LPSTR lpCmdLine,int nCmdShow){
         if (hold < release){
             hold = hold + 999;
         }
-        //60 fps give or take
-        if (hold > release + 17){
+
+        //increasing the release + ... Helps slow down the game, slower machines may need to decrease to run at a normal speed
+        //if (hold > release + 17){ //good for weaker machines (2 cores, 1.2GHz base frequency, 4GB RAM)
+        if (hold > release + 33) { //good for faster machines (e.g., 4 core, 1GHz base frequency, 8GB RAM)
             //run game events
             running = running && ctrlObj.run(); //need to && so that killing the window kills the game loop too
             //draw game world to pixel buffer
