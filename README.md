@@ -37,7 +37,7 @@ The game ends when you are either caught by a red square or you close the window
 
 ---
 
-## important
+## Important
 
 ### Game speed and rendering
 
