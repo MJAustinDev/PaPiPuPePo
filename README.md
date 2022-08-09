@@ -37,7 +37,7 @@ The game ends when you are either caught by a red square or you close the window
 
 ---
 
-## imporant
+## important
 
 ### Game speed and rendering
 
@@ -77,12 +77,6 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 
 To view the license itself see LICENSE.md, or look at the top of each .cpp, .h and .rc file where it exists as a comment!
-
-
-
-
-
-
 
 
 
