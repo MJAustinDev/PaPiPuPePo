@@ -7,8 +7,8 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="MainBuild">
-				<Option output="./Build/bin/PaPiPuPePo" prefix_auto="1" extension_auto="1" />
-				<Option object_output="./Build/obj/" />
+				<Option output="./Builds/bin/PaPiPuPePo" prefix_auto="1" extension_auto="1" />
+				<Option object_output="./Builds/obj/" />
 				<Option type="0" />
 				<Option compiler="gcc" />
 				<Compiler>
@@ -38,7 +38,6 @@
 		<Unit filename="GameEntities/Player.h" />
 		<Unit filename="Visuals/PxSystem.cpp" />
 		<Unit filename="Visuals/PxSystem.h" />
-		<Unit filename="Visuals/Resources.h" />
 		<Unit filename="Visuals/resources.h" />
 		<Unit filename="Visuals/resources.rc">
 			<Option compilerVar="WINDRES" />
