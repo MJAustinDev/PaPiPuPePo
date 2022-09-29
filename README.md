@@ -1,10 +1,14 @@
 # PaPiPuPePo ![icon](Visuals/PaPiPuPePoIcon.ico)
 
-Very simple game that I build years ago when I was first toying around with C++ game creation.
-I've touched up the code a wee bit and rephrased some of the comments,
-the main reason I'm bothering to push this to github is to help build up a portfolio.
-It was the only finished project of mine that used win32 and the stretchBlt function to draw a manually modified pixel buffer to screen (I've moved on to opengl now for a few reasons, some of the opengl projects I'm working on I plan to release later).
+A very simple game that I built years ago when toying around with C++ game creation.
+The code has been touched up a wee bit and some of the comments rephrased but the gameplay and base mechanics haven't changed.
 
+As I built this years ago there are a few things which are inefficent/sub-optimal and if I were to start over I would definently do differently.
+Such as the bare-bones use of win32's stretchBlt function with a CPU set pixel buffer for the graphics or the way that the game clock works.
+However I don't really want to waste more time on a old and simple game when I have other more interesting projects to work on.
+The only reason I've pushed this to github is to help build up a portfolio :)
+
+![](Visuals/ScreenCap.png)
 
 The game itself is named after the Japanese vowel sounds when combined with the consonant P,
 no particular reason other than it sounds kind of funny (at least when I'm practicing hiragana aloud lol)
@@ -16,8 +20,8 @@ Pa ぱ, Pi ぴ, Pu ぷ, Pe ぺ, Po ぽ
 
 ## Gameplay
 
-You play as the blue square and you have to reach the cyan square without being caught by any of the red squares.
-Each time you reach the cyan square you gain a point and a new red square spawns in.
+You play as the blue square and have to collect coins (cyan squares) without being caught by any of the bad guys (red squares).
+For every coin you collect you score a point but a new bad guy spawns in making the game slightly harder!
 
 
 ### Controls
@@ -41,15 +45,15 @@ The game ends when you are either caught by a red square or you close the window
 
 ### Game speed and rendering
 
-The game speed and rendering is attached to a simple timer system,
-see lines 146/147 of entry.cpp.
-I've uploaded the game for higher performance machines (I'd rather the game was slower on weaker machines than too fast and flashy on stronger machines).
+The game speed and rendering is attached to a bare-bones timer system, see lines 146/147 of entry.cpp.
+The game speed seems to run faster on higher performance machines, as such I've uploaded a version with a longer gameloop wait time.
+(I'd rather the game was slower on weaker machines than too fast and flashy on stronger machines).
 
-But I've included the cbp so you can easily modify the line and recompile the project for your machine.
+But I've included the Code::Blocks project so you can easily modify the line and recompile the project for your machine.
 ( hold > release + x, higher values of x make the game slower, lower values of x make the game faster).
 
-If you really wanted you could separate the game events and the rendering or just use a more reliable timer system?
-I'm not going to bother myself as I don't want to waste any more time on a game that I built years ago while testing the waters of bare-bones C++ game making.
+If I were to do this project again I'd use something like glfw and use their timer system,
+but again I don't want to waste anymore time on a game that was built years ago to test the waters of C++ game making.
 
 ### License
 
