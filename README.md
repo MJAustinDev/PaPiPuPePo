@@ -3,8 +3,10 @@
 A very simple game that I built years ago when toying around with C++ game creation.
 The code has been touched up a wee bit and some of the comments rephrased but the gameplay and base mechanics haven't changed.
 
-As I built this years ago there are a few things which are inefficent/sub-optimal and if I were to start over I would definently do differently.
-Such as the bare-bones use of win32's stretchBlt function with a CPU set pixel buffer for the graphics or the way that the game clock works.
+
+As I built this years ago the code isn't 100% efficient/optimal.
+If I were to start over I would definitely do a few things differently,
+such as the bare-bones use of win32's stretchBlt function for the graphics or the way that the game clock works.
 However I don't really want to waste more time on a old and simple game when I have other more interesting projects to work on.
 The only reason I've pushed this to github is to help build up a portfolio :)
 
